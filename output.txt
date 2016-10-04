@@ -1,0 +1,335 @@
+Attaching to docker_db_1, docker_wordpress_1
+[36mdb_1         |[0m Initializing database
+[36mdb_1         |[0m 2016-10-03T03:39:01.900464Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+[33mwordpress_1  |[0m WordPress not found in /var/www/html - copying now...
+[33mwordpress_1  |[0m Complete! WordPress has been successfully copied to /var/www/html
+[33mwordpress_1  |[0m 
+[33mwordpress_1  |[0m Warning: mysqli::mysqli(): (HY000/2002): Connection refused in - on line 19
+[33mwordpress_1  |[0m 
+[33mwordpress_1  |[0m MySQL Connection Error: (2002) Connection refused
+[33mwordpress_1  |[0m 
+[33mwordpress_1  |[0m MySQL Connection Error: (2002) Connection refused
+[33mwordpress_1  |[0m 
+[33mwordpress_1  |[0m Warning: mysqli::mysqli(): (HY000/2002): Connection refused in - on line 19
+[33mwordpress_1  |[0m 
+[33mwordpress_1  |[0m MySQL Connection Error: (2002) Connection refused
+[33mwordpress_1  |[0m 
+[33mwordpress_1  |[0m Warning: mysqli::mysqli(): (HY000/2002): Connection refused in - on line 19
+[33mwordpress_1  |[0m 
+[33mwordpress_1  |[0m MySQL Connection Error: (2002) Connection refused
+[33mwordpress_1  |[0m 
+[33mwordpress_1  |[0m Warning: mysqli::mysqli(): (HY000/2002): Connection refused in - on line 19
+[33mwordpress_1  |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.3. Set the 'ServerName' directive globally to suppress this message
+[33mwordpress_1  |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.3. Set the 'ServerName' directive globally to suppress this message
+[33mwordpress_1  |[0m [Mon Oct 03 03:39:18.641150 2016] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) PHP/5.6.26 configured -- resuming normal operations
+[33mwordpress_1  |[0m [Mon Oct 03 03:39:18.641201 2016] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[33mwordpress_1  |[0m 172.19.0.1 - - [03/Oct/2016:03:42:39 +0000] "GET /posts/1/edit HTTP/1.1" 302 379 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [03/Oct/2016:03:42:39 +0000] "GET /wp-admin/install.php HTTP/1.1" 200 3476 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [03/Oct/2016:03:42:40 +0000] "GET /wp-includes/css/buttons.min.css?ver=4.6.1 HTTP/1.1" 200 1698 "http://localhost:8000/wp-admin/install.php" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [03/Oct/2016:03:42:40 +0000] "GET /wp-admin/css/install.min.css?ver=4.6.1 HTTP/1.1" 200 2336 "http://localhost:8000/wp-admin/install.php" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [03/Oct/2016:03:42:40 +0000] "GET /wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1 HTTP/1.1" 200 4366 "http://localhost:8000/wp-admin/install.php" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [03/Oct/2016:03:42:40 +0000] "GET /wp-admin/js/language-chooser.min.js?ver=4.6.1 HTTP/1.1" 200 590 "http://localhost:8000/wp-admin/install.php" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [03/Oct/2016:03:42:40 +0000] "GET /wp-includes/css/dashicons.min.css?ver=4.6.1 HTTP/1.1" 200 28951 "http://localhost:8000/wp-admin/install.php" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [03/Oct/2016:03:42:40 +0000] "GET /wp-includes/js/jquery/jquery.js?ver=1.12.4 HTTP/1.1" 200 34119 "http://localhost:8000/wp-admin/install.php" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [03/Oct/2016:03:42:40 +0000] "GET /wp-admin/images/wordpress-logo.svg?ver=20131107 HTTP/1.1" 200 1810 "http://localhost:8000/wp-admin/css/install.min.css?ver=4.6.1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [03/Oct/2016:03:42:40 +0000] "GET /wp-admin/images/spinner-2x.gif HTTP/1.1" 200 8822 "http://localhost:8000/wp-admin/css/install.min.css?ver=4.6.1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [03/Oct/2016:03:42:41 +0000] "GET /favicon.ico HTTP/1.1" 200 228 "http://localhost:8000/wp-admin/install.php" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m ::1 - - [03/Oct/2016:03:42:48 +0000] "OPTIONS * HTTP/1.0" 200 126 "-" "Apache/2.4.10 (Debian) PHP/5.6.26 (internal dummy connection)"
+[33mwordpress_1  |[0m ::1 - - [03/Oct/2016:03:42:49 +0000] "OPTIONS * HTTP/1.0" 200 126 "-" "Apache/2.4.10 (Debian) PHP/5.6.26 (internal dummy connection)"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:09:41 +0000] "GET / HTTP/1.1" 302 379 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:09:42 +0000] "GET /wp-admin/install.php HTTP/1.1" 200 3468 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:09:43 +0000] "GET /favicon.ico HTTP/1.1" 200 228 "http://localhost:8000/wp-admin/install.php" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:15:18 +0000] "POST /wp-admin/install.php?step=1 HTTP/1.1" 200 2525 "http://localhost:8000/wp-admin/install.php" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:15:19 +0000] "GET /wp-includes/js/zxcvbn-async.min.js?ver=1.0 HTTP/1.1" 200 581 "http://localhost:8000/wp-admin/install.php?step=1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:15:19 +0000] "GET /wp-includes/js/wp-util.min.js?ver=4.6.1 HTTP/1.1" 200 925 "http://localhost:8000/wp-admin/install.php?step=1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:15:19 +0000] "GET /wp-admin/js/password-strength-meter.min.js?ver=4.6.1 HTTP/1.1" 200 826 "http://localhost:8000/wp-admin/install.php?step=1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:15:19 +0000] "GET /wp-admin/js/user-profile.min.js?ver=4.6.1 HTTP/1.1" 200 2577 "http://localhost:8000/wp-admin/install.php?step=1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:15:19 +0000] "GET /wp-includes/js/underscore.min.js?ver=1.8.3 HTTP/1.1" 200 6174 "http://localhost:8000/wp-admin/install.php?step=1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:15:19 +0000] "GET /favicon.ico HTTP/1.1" 200 228 "http://localhost:8000/wp-admin/install.php?step=1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:15:19 +0000] "GET /wp-includes/js/zxcvbn.min.js HTTP/1.1" 200 330747 "http://localhost:8000/wp-admin/install.php?step=1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:16:53 +0000] "POST /wp-admin/install.php?step=2 HTTP/1.1" 200 2367 "http://localhost:8000/wp-admin/install.php?step=1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:16:53 +0000] "GET /favicon.ico HTTP/1.1" 200 228 "http://localhost:8000/wp-admin/install.php?step=2" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:26:01 +0000] "GET /wp-admin/install.php?step=2 HTTP/1.1" 200 2369 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:26:02 +0000] "GET /favicon.ico HTTP/1.1" 200 228 "http://localhost:8000/wp-admin/install.php?step=2" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m [Tue Oct 04 02:26:53.208830 2016] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+[33mwordpress_1  |[0m 
+[33mwordpress_1  |[0m MySQL Connection Error: (2002) Connection refused
+[33mwordpress_1  |[0m 
+[33mwordpress_1  |[0m Warning: mysqli::mysqli(): (HY000/2002): Connection refused in - on line 19
+[33mwordpress_1  |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.3. Set the 'ServerName' directive globally to suppress this message
+[33mwordpress_1  |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.3. Set the 'ServerName' directive globally to suppress this message
+[33mwordpress_1  |[0m [Tue Oct 04 02:27:30.119930 2016] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) PHP/5.6.26 configured -- resuming normal operations
+[33mwordpress_1  |[0m [Tue Oct 04 02:27:30.119978 2016] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:27:33 +0000] "GET /wp-admin/install.php?step=2 HTTP/1.1" 200 2369 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:27:34 +0000] "GET /favicon.ico HTTP/1.1" 200 228 "http://localhost:8000/wp-admin/install.php?step=2" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[36mdb_1         |[0m 2016-10-03T03:39:01.909977Z 0 [Warning] Setting lower_case_table_names=2 because file system for /var/lib/mysql/ is case insensitive
+[36mdb_1         |[0m 2016-10-03T03:39:04.016172Z 0 [Warning] InnoDB: New log files created, LSN=45790
+[36mdb_1         |[0m 2016-10-03T03:39:04.272251Z 0 [Warning] InnoDB: Creating foreign key constraint system tables.
+[36mdb_1         |[0m 2016-10-03T03:39:04.341003Z 0 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: ee6943db-891a-11e6-95f8-0242ac130002.
+[36mdb_1         |[0m 2016-10-03T03:39:04.343699Z 0 [Warning] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
+[36mdb_1         |[0m 2016-10-03T03:39:04.349981Z 1 [Warning] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[36mdb_1         |[0m 2016-10-03T03:39:08.098050Z 1 [Warning] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 2016-10-03T03:39:08.098093Z 1 [Warning] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 2016-10-03T03:39:08.100468Z 1 [Warning] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 2016-10-03T03:39:08.102558Z 1 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 2016-10-03T03:39:08.106332Z 1 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m Database initialized
+[36mdb_1         |[0m MySQL init process in progress...
+[36mdb_1         |[0m 2016-10-03T03:39:10.685238Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+[36mdb_1         |[0m 2016-10-03T03:39:10.692708Z 0 [Note] mysqld (mysqld 5.7.15) starting as process 49 ...
+[36mdb_1         |[0m 2016-10-03T03:39:10.697953Z 0 [Warning] Setting lower_case_table_names=2 because file system for /var/lib/mysql/ is case insensitive
+[36mdb_1         |[0m 2016-10-03T03:39:10.699998Z 0 [Note] InnoDB: PUNCH HOLE support available
+[36mdb_1         |[0m 2016-10-03T03:39:10.700061Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+[36mdb_1         |[0m 2016-10-03T03:39:10.700080Z 0 [Note] InnoDB: Uses event mutexes
+[36mdb_1         |[0m 2016-10-03T03:39:10.700092Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+[36mdb_1         |[0m 2016-10-03T03:39:10.700104Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+[36mdb_1         |[0m 2016-10-03T03:39:10.700115Z 0 [Note] InnoDB: Using Linux native AIO
+[36mdb_1         |[0m 2016-10-03T03:39:10.700474Z 0 [Note] InnoDB: Number of pools: 1
+[36mdb_1         |[0m 2016-10-03T03:39:10.700621Z 0 [Note] InnoDB: Using CPU crc32 instructions
+[36mdb_1         |[0m 2016-10-03T03:39:10.702325Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+[36mdb_1         |[0m 2016-10-03T03:39:10.711449Z 0 [Note] InnoDB: Completed initialization of buffer pool
+[36mdb_1         |[0m 2016-10-03T03:39:10.713233Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+[36mdb_1         |[0m 2016-10-03T03:39:10.753511Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+[36mdb_1         |[0m 2016-10-03T03:39:10.848498Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+[36mdb_1         |[0m 2016-10-03T03:39:10.850117Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[36mdb_1         |[0m 2016-10-03T03:39:10.939049Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[36mdb_1         |[0m 2016-10-03T03:39:10.952780Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+[36mdb_1         |[0m 2016-10-03T03:39:10.952839Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+[36mdb_1         |[0m 2016-10-03T03:39:10.960531Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 2528985
+[36mdb_1         |[0m 2016-10-03T03:39:10.960940Z 0 [Note] Plugin 'FEDERATED' is disabled.
+[36mdb_1         |[0m 2016-10-03T03:39:10.966056Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[36mdb_1         |[0m 2016-10-03T03:39:11.004915Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+[36mdb_1         |[0m 2016-10-03T03:39:11.011891Z 0 [Note] InnoDB: Buffer pool(s) load completed at 161003  3:39:10
+[36mdb_1         |[0m 2016-10-03T03:39:11.049486Z 0 [Warning] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 2016-10-03T03:39:11.049563Z 0 [Warning] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 2016-10-03T03:39:11.050626Z 0 [Warning] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 2016-10-03T03:39:11.051695Z 0 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 2016-10-03T03:39:11.109758Z 0 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 2016-10-03T03:39:11.342201Z 0 [Note] Event Scheduler: Loaded 0 events
+[36mdb_1         |[0m 2016-10-03T03:39:11.342606Z 0 [Note] mysqld: ready for connections.
+[36mdb_1         |[0m Version: '5.7.15'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server (GPL)
+[36mdb_1         |[0m Warning: Unable to load '/usr/share/zoneinfo/Factory' as time zone. Skipping it.
+[36mdb_1         |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[36mdb_1         |[0m Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+[36mdb_1         |[0m Warning: Unable to load '/usr/share/zoneinfo/posix/Factory' as time zone. Skipping it.
+[36mdb_1         |[0m Warning: Unable to load '/usr/share/zoneinfo/right/Factory' as time zone. Skipping it.
+[36mdb_1         |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[36mdb_1         |[0m 2016-10-03T03:39:14.811615Z 4 [Warning] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 2016-10-03T03:39:14.812159Z 4 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 2016-10-03T03:39:14.812609Z 4 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m mysql: [Warning] Using a password on the command line interface can be insecure.
+[36mdb_1         |[0m mysql: [Warning] Using a password on the command line interface can be insecure.
+[36mdb_1         |[0m mysql: [Warning] Using a password on the command line interface can be insecure.
+[36mdb_1         |[0m mysql: [Warning] Using a password on the command line interface can be insecure.
+[36mdb_1         |[0m 2016-10-03T03:39:14.882489Z 8 [Warning] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 2016-10-03T03:39:14.883564Z 8 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 2016-10-03T03:39:14.894925Z 8 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 
+[36mdb_1         |[0m 2016-10-03T03:39:14.898454Z 0 [Note] Giving 0 client threads a chance to die gracefully
+[36mdb_1         |[0m 2016-10-03T03:39:14.898551Z 0 [Note] Shutting down slave threads
+[36mdb_1         |[0m 2016-10-03T03:39:14.898558Z 0 [Note] Forcefully disconnecting 0 remaining clients
+[36mdb_1         |[0m 2016-10-03T03:39:14.898714Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+[36mdb_1         |[0m 2016-10-03T03:39:14.899038Z 0 [Note] Binlog end
+[36mdb_1         |[0m 2016-10-03T03:39:14.930805Z 0 [Note] Shutting down plugin 'ngram'
+[36mdb_1         |[0m 2016-10-03T03:39:14.930962Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+[36mdb_1         |[0m 2016-10-03T03:39:14.930979Z 0 [Note] Shutting down plugin 'partition'
+[36mdb_1         |[0m 2016-10-03T03:39:14.930990Z 0 [Note] Shutting down plugin 'ARCHIVE'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931000Z 0 [Note] Shutting down plugin 'MEMORY'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931010Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931021Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931030Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931040Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931049Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931059Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931068Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931077Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931086Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931096Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931105Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931114Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931123Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931133Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931359Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931390Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931409Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931424Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931439Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931452Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931466Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931480Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931495Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931678Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931698Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931714Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931730Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931746Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931762Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931778Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+[36mdb_1         |[0m 2016-10-03T03:39:14.931794Z 0 [Note] Shutting down plugin 'InnoDB'
+[36mdb_1         |[0m 2016-10-03T03:39:14.932959Z 0 [Note] InnoDB: FTS optimize thread exiting.
+[36mdb_1         |[0m 2016-10-03T03:39:14.933552Z 0 [Note] InnoDB: Starting shutdown...
+[36mdb_1         |[0m 2016-10-03T03:39:15.037605Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+[36mdb_1         |[0m 2016-10-03T03:39:15.044838Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 161003  3:39:15
+[36mdb_1         |[0m 2016-10-03T03:39:16.901576Z 0 [Note] InnoDB: Shutdown completed; log sequence number 12134784
+[36mdb_1         |[0m 2016-10-03T03:39:16.903361Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+[36mdb_1         |[0m 2016-10-03T03:39:16.903650Z 0 [Note] Shutting down plugin 'MyISAM'
+[36mdb_1         |[0m 2016-10-03T03:39:16.903707Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+[36mdb_1         |[0m 2016-10-03T03:39:16.903753Z 0 [Note] Shutting down plugin 'CSV'
+[36mdb_1         |[0m 2016-10-03T03:39:16.904060Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+[36mdb_1         |[0m 2016-10-03T03:39:16.904155Z 0 [Note] Shutting down plugin 'sha256_password'
+[36mdb_1         |[0m 2016-10-03T03:39:16.904177Z 0 [Note] Shutting down plugin 'mysql_native_password'
+[36mdb_1         |[0m 2016-10-03T03:39:16.904475Z 0 [Note] Shutting down plugin 'binlog'
+[36mdb_1         |[0m 2016-10-03T03:39:16.905278Z 0 [Note] mysqld: Shutdown complete
+[36mdb_1         |[0m 
+[36mdb_1         |[0m 
+[36mdb_1         |[0m MySQL init process done. Ready for start up.
+[36mdb_1         |[0m 
+[36mdb_1         |[0m 2016-10-03T03:39:17.129434Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+[36mdb_1         |[0m 2016-10-03T03:39:17.135772Z 0 [Note] mysqld (mysqld 5.7.15) starting as process 1 ...
+[36mdb_1         |[0m 2016-10-03T03:39:17.140391Z 0 [Warning] Setting lower_case_table_names=2 because file system for /var/lib/mysql/ is case insensitive
+[36mdb_1         |[0m 2016-10-03T03:39:17.142905Z 0 [Note] InnoDB: PUNCH HOLE support available
+[36mdb_1         |[0m 2016-10-03T03:39:17.142941Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+[36mdb_1         |[0m 2016-10-03T03:39:17.142948Z 0 [Note] InnoDB: Uses event mutexes
+[36mdb_1         |[0m 2016-10-03T03:39:17.142954Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+[36mdb_1         |[0m 2016-10-03T03:39:17.142960Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+[36mdb_1         |[0m 2016-10-03T03:39:17.143020Z 0 [Note] InnoDB: Using Linux native AIO
+[36mdb_1         |[0m 2016-10-03T03:39:17.143343Z 0 [Note] InnoDB: Number of pools: 1
+[36mdb_1         |[0m 2016-10-03T03:39:17.143596Z 0 [Note] InnoDB: Using CPU crc32 instructions
+[36mdb_1         |[0m 2016-10-03T03:39:17.145868Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+[36mdb_1         |[0m 2016-10-03T03:39:17.154074Z 0 [Note] InnoDB: Completed initialization of buffer pool
+[36mdb_1         |[0m 2016-10-03T03:39:17.155533Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+[36mdb_1         |[0m 2016-10-03T03:39:17.197843Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+[36mdb_1         |[0m 2016-10-03T03:39:17.272528Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+[36mdb_1         |[0m 2016-10-03T03:39:17.274068Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[36mdb_1         |[0m 2016-10-03T03:39:17.378798Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[36mdb_1         |[0m 2016-10-03T03:39:17.391396Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+[36mdb_1         |[0m 2016-10-03T03:39:17.391428Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+[36mdb_1         |[0m 2016-10-03T03:39:17.391958Z 0 [Note] InnoDB: Waiting for purge to start
+[36mdb_1         |[0m 2016-10-03T03:39:17.445953Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 12134784
+[36mdb_1         |[0m 2016-10-03T03:39:17.446846Z 0 [Note] Plugin 'FEDERATED' is disabled.
+[36mdb_1         |[0m 2016-10-03T03:39:17.449535Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[36mdb_1         |[0m 2016-10-03T03:39:17.482204Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+[36mdb_1         |[0m 2016-10-03T03:39:17.483128Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+[36mdb_1         |[0m 2016-10-03T03:39:17.483228Z 0 [Note] IPv6 is available.
+[36mdb_1         |[0m 2016-10-03T03:39:17.483257Z 0 [Note]   - '::' resolves to '::';
+[36mdb_1         |[0m 2016-10-03T03:39:17.483337Z 0 [Note] Server socket created on IP: '::'.
+[36mdb_1         |[0m 2016-10-03T03:39:17.516003Z 0 [Note] InnoDB: Buffer pool(s) load completed at 161003  3:39:17
+[36mdb_1         |[0m 2016-10-03T03:39:17.534938Z 0 [Warning] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 2016-10-03T03:39:17.536286Z 0 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 2016-10-03T03:39:17.578509Z 0 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 2016-10-03T03:39:17.779543Z 0 [Note] Event Scheduler: Loaded 0 events
+[36mdb_1         |[0m 2016-10-03T03:39:17.779882Z 0 [Note] mysqld: ready for connections.
+[36mdb_1         |[0m Version: '5.7.15'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+[36mdb_1         |[0m 2016-10-03T03:45:42.808461Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 70907ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+[36mdb_1         |[0m 2016-10-03T03:57:43.238334Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 596207ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+[36mdb_1         |[0m 2016-10-03T11:10:07.240915Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 25939997ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+[36mdb_1         |[0m 2016-10-03T12:17:56.783747Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 4065534ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+[36mdb_1         |[0m 2016-10-03T12:24:59.318922Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 418527ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+[36mdb_1         |[0m 2016-10-03T12:25:10.915214Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 7592ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+[36mdb_1         |[0m 2016-10-03T13:10:10.578917Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 2695654ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+[36mdb_1         |[0m 2016-10-03T13:17:02.798760Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 46329ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+[36mdb_1         |[0m 2016-10-04T00:25:24.767383Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 40061092ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+[36mdb_1         |[0m 2016-10-04T00:34:38.777382Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 550005ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+[36mdb_1         |[0m 2016-10-04T00:49:16.344003Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 873563ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+[36mdb_1         |[0m 2016-10-04T01:41:22.454212Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 3122100ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+[36mdb_1         |[0m 2016-10-04T01:47:03.453857Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 336991ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+[36mdb_1         |[0m 2016-10-04T01:51:10.031989Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 242571ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+[36mdb_1         |[0m 2016-10-04T01:51:33.418833Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 22383ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+[36mdb_1         |[0m 2016-10-04T02:27:05.023685Z 0 [Note] Giving 0 client threads a chance to die gracefully
+[36mdb_1         |[0m 2016-10-04T02:27:05.023755Z 0 [Note] Shutting down slave threads
+[36mdb_1         |[0m 2016-10-04T02:27:05.023778Z 0 [Note] Forcefully disconnecting 0 remaining clients
+[36mdb_1         |[0m 2016-10-04T02:27:05.024912Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+[36mdb_1         |[0m 2016-10-04T02:27:05.025337Z 0 [Note] Binlog end
+[36mdb_1         |[0m 2016-10-04T02:27:05.044312Z 0 [Note] Shutting down plugin 'ngram'
+[36mdb_1         |[0m 2016-10-04T02:27:05.044538Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+[36mdb_1         |[0m 2016-10-04T02:27:05.044730Z 0 [Note] Shutting down plugin 'partition'
+[36mdb_1         |[0m 2016-10-04T02:27:05.044760Z 0 [Note] Shutting down plugin 'ARCHIVE'
+[36mdb_1         |[0m 2016-10-04T02:27:05.044773Z 0 [Note] Shutting down plugin 'MEMORY'
+[36mdb_1         |[0m 2016-10-04T02:27:05.044784Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+[36mdb_1         |[0m 2016-10-04T02:27:05.044891Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+[36mdb_1         |[0m 2016-10-04T02:27:05.044924Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+[36mdb_1         |[0m 2016-10-04T02:27:05.044936Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+[36mdb_1         |[0m 2016-10-04T02:27:05.044952Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045019Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045029Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045062Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045144Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045175Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045285Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045338Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045452Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045480Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045491Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045505Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045577Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045603Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045633Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045654Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045717Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045732Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045748Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045762Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045782Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045871Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+[36mdb_1         |[0m 2016-10-04T02:27:05.045969Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+[36mdb_1         |[0m 2016-10-04T02:27:05.046007Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+[36mdb_1         |[0m 2016-10-04T02:27:05.046037Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+[36mdb_1         |[0m 2016-10-04T02:27:05.046126Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+[36mdb_1         |[0m 2016-10-04T02:27:05.046138Z 0 [Note] Shutting down plugin 'InnoDB'
+[36mdb_1         |[0m 2016-10-04T02:27:05.046683Z 0 [Note] InnoDB: FTS optimize thread exiting.
+[36mdb_1         |[0m 2016-10-04T02:27:05.052768Z 0 [Note] InnoDB: Starting shutdown...
+[36mdb_1         |[0m 2016-10-04T02:27:05.165011Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+[36mdb_1         |[0m 2016-10-04T02:27:05.174931Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 161004  2:27:05
+[36mdb_1         |[0m 2016-10-04T02:27:06.546965Z 0 [Note] InnoDB: Shutdown completed; log sequence number 12134812
+[36mdb_1         |[0m 2016-10-04T02:27:06.549704Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+[36mdb_1         |[0m 2016-10-04T02:27:06.549856Z 0 [Note] Shutting down plugin 'MyISAM'
+[36mdb_1         |[0m 2016-10-04T02:27:06.551115Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+[36mdb_1         |[0m 2016-10-04T02:27:06.551242Z 0 [Note] Shutting down plugin 'CSV'
+[36mdb_1         |[0m 2016-10-04T02:27:06.551320Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+[36mdb_1         |[0m 2016-10-04T02:27:06.551470Z 0 [Note] Shutting down plugin 'sha256_password'
+[36mdb_1         |[0m 2016-10-04T02:27:06.551507Z 0 [Note] Shutting down plugin 'mysql_native_password'
+[36mdb_1         |[0m 2016-10-04T02:27:06.552302Z 0 [Note] Shutting down plugin 'binlog'
+[36mdb_1         |[0m 2016-10-04T02:27:06.557140Z 0 [Note] mysqld: Shutdown complete
+[36mdb_1         |[0m 
+[36mdb_1         |[0m 2016-10-04T02:27:26.785560Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+[36mdb_1         |[0m 2016-10-04T02:27:26.798458Z 0 [Note] mysqld (mysqld 5.7.15) starting as process 1 ...
+[36mdb_1         |[0m 2016-10-04T02:27:26.807752Z 0 [Warning] Setting lower_case_table_names=2 because file system for /var/lib/mysql/ is case insensitive
+[36mdb_1         |[0m 2016-10-04T02:27:26.812471Z 0 [Note] InnoDB: PUNCH HOLE support available
+[36mdb_1         |[0m 2016-10-04T02:27:26.812616Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+[36mdb_1         |[0m 2016-10-04T02:27:26.812779Z 0 [Note] InnoDB: Uses event mutexes
+[36mdb_1         |[0m 2016-10-04T02:27:26.812890Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+[36mdb_1         |[0m 2016-10-04T02:27:26.812952Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+[36mdb_1         |[0m 2016-10-04T02:27:26.813061Z 0 [Note] InnoDB: Using Linux native AIO
+[36mdb_1         |[0m 2016-10-04T02:27:26.813826Z 0 [Note] InnoDB: Number of pools: 1
+[36mdb_1         |[0m 2016-10-04T02:27:26.814173Z 0 [Note] InnoDB: Using CPU crc32 instructions
+[36mdb_1         |[0m 2016-10-04T02:27:26.821554Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+[36mdb_1         |[0m 2016-10-04T02:27:26.837254Z 0 [Note] InnoDB: Completed initialization of buffer pool
+[36mdb_1         |[0m 2016-10-04T02:27:26.845930Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+[36mdb_1         |[0m 2016-10-04T02:27:26.902207Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+[36mdb_1         |[0m 2016-10-04T02:27:27.021940Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+[36mdb_1         |[0m 2016-10-04T02:27:27.026450Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[36mdb_1         |[0m 2016-10-04T02:27:27.149014Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[36mdb_1         |[0m 2016-10-04T02:27:27.161836Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+[36mdb_1         |[0m 2016-10-04T02:27:27.161872Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+[36mdb_1         |[0m 2016-10-04T02:27:27.167682Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 12134812
+[36mdb_1         |[0m 2016-10-04T02:27:27.169298Z 0 [Note] Plugin 'FEDERATED' is disabled.
+[36mdb_1         |[0m 2016-10-04T02:27:27.171941Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[36mdb_1         |[0m 2016-10-04T02:27:27.213433Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+[36mdb_1         |[0m 2016-10-04T02:27:27.215174Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+[36mdb_1         |[0m 2016-10-04T02:27:27.215225Z 0 [Note] IPv6 is available.
+[36mdb_1         |[0m 2016-10-04T02:27:27.215295Z 0 [Note]   - '::' resolves to '::';
+[36mdb_1         |[0m 2016-10-04T02:27:27.216016Z 0 [Note] Server socket created on IP: '::'.
+[36mdb_1         |[0m 2016-10-04T02:27:27.250943Z 0 [Note] InnoDB: Buffer pool(s) load completed at 161004  2:27:27
+[36mdb_1         |[0m 2016-10-04T02:27:27.275297Z 0 [Warning] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 2016-10-04T02:27:27.276553Z 0 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 2016-10-04T02:27:27.318621Z 0 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36mdb_1         |[0m 2016-10-04T02:27:27.561978Z 0 [Note] Event Scheduler: Loaded 0 events
+[36mdb_1         |[0m 2016-10-04T02:27:27.562684Z 0 [Note] mysqld: ready for connections.
+[36mdb_1         |[0m Version: '5.7.15'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:47:22 +0000] "GET / HTTP/1.1" 302 379 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:47:22 +0000] "GET /wp-admin/install.php HTTP/1.1" 200 3468 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:47:24 +0000] "GET /favicon.ico HTTP/1.1" 200 228 "http://localhost:8000/wp-admin/install.php" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:47:48 +0000] "GET /wp-admin/install.php HTTP/1.1" 200 3469 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:47:49 +0000] "GET /favicon.ico HTTP/1.1" 200 228 "http://localhost:8000/wp-admin/install.php" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:48:01 +0000] "GET /wp-admin/install.php HTTP/1.1" 200 3469 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+[33mwordpress_1  |[0m 172.19.0.1 - - [04/Oct/2016:02:48:02 +0000] "GET /favicon.ico HTTP/1.1" 200 228 "http://localhost:8000/wp-admin/install.php" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
