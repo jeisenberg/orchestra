@@ -9,20 +9,16 @@ defmodule Orchestra.Stream do
   """
 
   def up(recv_module, recv_function, opts \\ []) do
-    %Proc{pid: pid} = Orchestra.Command.up(opts)
-    |> Porcelain.spawn_shell(in: :receive, out: {:send, self()})
-    receive do
-      {^pid, :data, :out, data} -> apply(recv_module, recv_function, data)
-    end
-    receive do
-      {^pid, :result, %Result{status: status}} -> IO.inspect status   #=> 0
-    end
+    cmd = Orchestra.Command.up(opts)
+    {out, status} = System.cmd(System.get_env("SHELL"), ["-c", cmd], [stderr_to_stdout: true, into: IO.stream(:stdio, :line)])
+    apply(recv_module, recv_function, out)
   end
   def up(opts \\ []) do
-    %Proc{out: outstream, pid: pid} = Orchestra.Command.up(opts)
-    |> Porcelain.spawn_shell(in: :receive, out: :stream)
-    Enum.into(outstream, IO.stream(:stdio, :line))
-    {:ok, pid}
+    cmd = Orchestra.Command.up(opts)
+    {out, status} = System.cmd(System.get_env("SHELL"), ["-c", cmd], [stderr_to_stdout: true, into: IO.stream(:stdio, :line)])
+    for line <- out do
+      IO.inspect line
+    end
   end
 
   @doc"""

@@ -12,6 +12,7 @@ defmodule Orchestra do
   """
   def build_command(command, exec, opts) do
     parsed_opts = parse_opts(opts)
+    #[command, parsed_opts, exec]
     Enum.join([command, parsed_opts, exec], " ")
   end
 
